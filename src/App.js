@@ -15,10 +15,10 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" target="_blank" href="https://saharsh-r.github.io/">
+      <Link  target="_blank" href="https://saharsh-r.github.io/">
         Saharsh Rathi
-      </Link>{' '}
-      {new Date().getFullYear()}
+      </Link>{' at '}
+      {new Date().toUTCString()}
       {'.'}
     </Typography>
   );
@@ -164,9 +164,9 @@ export default function App() {
   }, [dataset])
   
   return (
-    <Grid container alignItems = 'center' justify = 'center'  style = {{backgroundColor: 'grey'}}>
+    <Grid container alignItems = 'center' justify = 'center'  style = {{backgroundImage: 'radial-gradient( grey, #414141, #000000)'}}>
       <Grid item >
-        <Box  p={4} style={{backgroundColor: '#f5f5f5'}} borderRadius={40}>
+        <Box  boxShadow={24} p={4} style={{backgroundColor: 'white'}} borderRadius={40}>
           <Typography variant="h4" component="h1" align = 'center' id='title' gutterBottom>
             Monthly Global Land-Surface Temperature
           </Typography>
