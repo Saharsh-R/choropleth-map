@@ -107,6 +107,15 @@ function BarChart({ id, us, education, width = 950, height = 680 }) {
         });
 
     svg.call(tip);
+    svg
+      .append('path')
+      .datum(
+        topojson.mesh(us, us.objects.states, function (a, b) {
+          return a !== b;
+        })
+      )
+      .attr('class', 'states')
+      .attr('d', path);
   }, []);
   
 
