@@ -19,7 +19,8 @@
     "d3-tip": "^0.9.1",
     "react": "latest",
     "react-dom": "latest",
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "topojson": "^3.0.2"
   },
   "browserslist": {
     "production": [
